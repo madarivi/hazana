@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/net/context/ctxhttp"
 
-	"github.com/emicklei/hazana"
+	"github.com/madarivi/hazana"
 )
 
 func main() {

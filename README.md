@@ -1,7 +1,7 @@
 # hazana - package for creating load tests of services
 
 [![Build Status](https://travis-ci.org/emicklei/hazana.png)](https://travis-ci.org/emicklei/hazana)
-[![GoDoc](https://godoc.org/github.com/emicklei/hazana?status.svg)](https://godoc.org/github.com/emicklei/hazana)
+[![GoDoc](https://godoc.org/github.com/madarivi/hazana?status.svg)](https://godoc.org/github.com/madarivi/hazana)
 
 Hazana is created for load tests that use (generated) clients in Go to communicate to services (in any supported language).
 By providing the Attack interface, any client and protocol could potentially be tested with this package.
@@ -185,12 +185,12 @@ See **examples/clock** for an actual gRPC service that can tell time under load.
 
 ### Stackdriver integration
 
-The [hazana-stackdriver-monitoring](https://github.com/emicklei/hazana-stackdriver-monitoring) project offers a tool to send the results of a loadtest to a Google Stackdriver account. The metrics from the load test are sent as custom metrics to Stackdriver Monitoring. The report itself is sent as a log entry to Stackdriver Logging.
+The [hazana-stackdriver-monitoring](https://github.com/madarivi/hazana-stackdriver-monitoring) project offers a tool to send the results of a loadtest to a Google Stackdriver account. The metrics from the load test are sent as custom metrics to Stackdriver Monitoring. The report itself is sent as a log entry to Stackdriver Logging.
 
 ## Graph visualization
 
 The [hazana-report-visualizer](https://github.com/robertalpha/hazana-report-visualizer) is a tool that produces a diagram served by a local webapp that visualizes a set of reports. It parses the JSON documents to collect the data points.
 
-The [hazana-grafana-monitoring](https://github.com/emicklei/hazana-grafana-monitoring) package sends data to a Graphite server which data can be visualised using a Grafana dashboard. Using the "-m" flag you can tell your running loadtest to send this data in realtime to the dashboard (via Graphite).
+The [hazana-grafana-monitoring](https://github.com/madarivi/hazana-grafana-monitoring) package sends data to a Graphite server which data can be visualised using a Grafana dashboard. Using the "-m" flag you can tell your running loadtest to send this data in realtime to the dashboard (via Graphite).
 
 © 2017-2019, [ernestmicklei.com](http://ernestmicklei.com).  Apache v2 License. Contributions welcome.

@@ -5,7 +5,7 @@ import (
 
 	"context"
 
-	"github.com/emicklei/hazana"
+	"github.com/madarivi/hazana"
 	grpc "google.golang.org/grpc"
 )
 

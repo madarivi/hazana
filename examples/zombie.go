@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/emicklei/hazana"
+	"github.com/madarivi/hazana"
 )
 
 // Perform one sample call
